@@ -12,6 +12,8 @@
 		513927BF219C5B8F00D20613 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513927BD219C5B8F00D20613 /* Main.storyboard */; };
 		513927C1219C5B9000D20613 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513927C0219C5B9000D20613 /* Assets.xcassets */; };
 		513927C4219C5B9000D20613 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513927C2219C5B9000D20613 /* LaunchScreen.storyboard */; };
+		513927CE219C5FAD00D20613 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513927CD219C5FAD00D20613 /* SpeechViewController.swift */; };
+		513927D0219C5FC400D20613 /* SpeechViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 513927CF219C5FC400D20613 /* SpeechViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		513927C0219C5B9000D20613 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		513927C3219C5B9000D20613 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		513927C5219C5B9000D20613 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		513927CD219C5FAD00D20613 /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
+		513927CF219C5FC400D20613 /* SpeechViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpeechViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		513927B8219C5B8F00D20613 /* iossamples */ = {
 			isa = PBXGroup;
 			children = (
+				513927CB219C5F4900D20613 /* modules */,
 				513927B9219C5B8F00D20613 /* AppDelegate.swift */,
 				513927BB219C5B8F00D20613 /* ViewController.swift */,
 				513927BD219C5B8F00D20613 /* Main.storyboard */,
@@ -62,6 +67,23 @@
 				513927C5219C5B9000D20613 /* Info.plist */,
 			);
 			path = iossamples;
+			sourceTree = "<group>";
+		};
+		513927CB219C5F4900D20613 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				513927CC219C5F5200D20613 /* speech */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		513927CC219C5F5200D20613 /* speech */ = {
+			isa = PBXGroup;
+			children = (
+				513927CD219C5FAD00D20613 /* SpeechViewController.swift */,
+				513927CF219C5FC400D20613 /* SpeechViewController.storyboard */,
+			);
+			path = speech;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				513927C4219C5B9000D20613 /* LaunchScreen.storyboard in Resources */,
+				513927D0219C5FC400D20613 /* SpeechViewController.storyboard in Resources */,
 				513927C1219C5B9000D20613 /* Assets.xcassets in Resources */,
 				513927BF219C5B8F00D20613 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				513927BC219C5B8F00D20613 /* ViewController.swift in Sources */,
+				513927CE219C5FAD00D20613 /* SpeechViewController.swift in Sources */,
 				513927BA219C5B8F00D20613 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

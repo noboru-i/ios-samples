@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func onClickSpeech(_ sender: Any) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "SpeechViewController", bundle: nil)
+        if let next = storyboard.instantiateInitialViewController() {
+            present(next, animated: true)
+        }
+    }
 }
-
