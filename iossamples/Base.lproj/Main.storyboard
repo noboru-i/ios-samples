@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="52" height="30"/>
                                         <state key="normal" title="Speech"/>
                                         <connections>
-                                            <action selector="onClickSpeech:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yNk-c7-s4H"/>
+                                            <action selector="onClickSpeech:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TCb-pg-zFn"/>
                                         </connections>
                                     </button>
                                 </subviews>

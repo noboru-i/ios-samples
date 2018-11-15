@@ -13,23 +13,46 @@
         <!--Speech View Controller-->
         <scene sceneID="GAw-e4-ftc">
             <objects>
-                <viewController id="dys-eq-TPB" customClass="SpeechViewController" sceneMemberID="viewController">
+                <viewController id="dys-eq-TPB" customClass="SpeechViewController" customModule="iossamples" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwh-I5-WmE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx5-dy-9jT">
-                                <rect key="frame" x="164" y="318" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gx5-dy-9jT" userLabel="RecognizeButton">
+                                <rect key="frame" x="87.5" y="318" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bzM-px-U3N"/>
+                                </constraints>
+                                <state key="normal" title="start voice recognize"/>
+                                <connections>
+                                    <action selector="onClickRecognize:" destination="dys-eq-TPB" eventType="touchUpInside" id="aZ3-8M-pEh"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOz-Fe-wOq">
+                                <rect key="frame" x="20" y="356" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nOz-Fe-wOq" firstAttribute="leading" secondItem="9vC-ZZ-ZTd" secondAttribute="leading" constant="20" id="5t0-14-F8c"/>
+                            <constraint firstItem="9vC-ZZ-ZTd" firstAttribute="trailing" secondItem="nOz-Fe-wOq" secondAttribute="trailing" constant="20" id="Oac-dy-MlE"/>
+                            <constraint firstItem="Gx5-dy-9jT" firstAttribute="centerX" secondItem="hwh-I5-WmE" secondAttribute="centerX" id="sRX-Tx-RHS"/>
+                            <constraint firstItem="Gx5-dy-9jT" firstAttribute="top" secondItem="9vC-ZZ-ZTd" secondAttribute="top" constant="298" id="ss0-lz-WfX"/>
+                            <constraint firstItem="nOz-Fe-wOq" firstAttribute="top" secondItem="Gx5-dy-9jT" secondAttribute="bottom" constant="8" id="wIy-7F-U8u"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9vC-ZZ-ZTd"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="nOz-Fe-wOq" id="DWI-a9-xPy"/>
+                        <outlet property="recognizeButton" destination="Gx5-dy-9jT" id="y4k-1m-tiz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iTZ-lA-NJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>
